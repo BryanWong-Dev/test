@@ -1,0 +1,116 @@
+﻿<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Demon ~ contact</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="media/photo/logosite.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/styleContact.css">
+    <script async defer src="js/map.js"></script>
+
+</head>
+
+<body>
+    <div class="header" id="myHeader">
+        <nav>
+            <ul class="nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="bodykit.html">Body Kit</a></li>
+                <li><a href="index.html" class="has-logo"><img src="media/photo/final_logo.png" alt=""></a></li>
+                <li><a href="exhaust.html">Exhaust</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="xback1" style="background-image: url(media/photo/shop.jpg);">
+        <div class="inner-container">
+            <div class="left1">
+                <table>
+                    <th>
+                        <h1>Contact Us</h1>
+                    </th>
+                    <tr>
+                        <td>
+                            <h3>Name : <em>Mr Bryan Wong</em></h3>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h3>Email : <em>demonsport2000@gmail.com</em></h3>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h3>Phone Number : <em>018-2225677</em></h3>
+
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h3>location : <em>Demon Customs , Jalan Kelang,5330 Kuala Lumpur</em></h3>
+
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            
+            <div class="right1">
+                <h1>Location</h1>
+                <div id="map"></div>
+
+
+            </div>
+        </div>
+    </div>
+
+
+    <div id="Xsection2">
+        <img src="media/photo/wp1930626.jpg" alt="" class="xback2">
+        <div class="inner-container">
+            <form action="http://127.0.0.1:56435/contact.html" method="post" class="Messages">
+
+                <h2>Leave a message or contact us if u have any question or making any appointment.</h2>
+                <div class="allbox">
+                    <div class="innerbox1">
+                        <input name="Name" id="NameBox" type="text" autocomplete="off" placeholder="eg : Demon Wong" required>
+                        <label for="NameBox" class="label-name">
+                            <span class="content-name">Name</span>
+                        </label>
+                    </div>
+                    <div class="innerbox2">
+                        <input name="PhoneNumber" type="tel" pattern="^what\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$" id="PhoneBox" placeholder="                eg : (nnn) nnn-nnnn" required>
+                        <label for="PhoneNumber" class="label-number">
+                            <span class="content-number">Number </span>
+                        </label>
+                    </div>
+                    <div class="innerbox3">
+                        <input name="Email" id="EmailBox" placeholder="        eg : exmaple@gmail.com" type="email" class="testArea2" required>
+                        <label for="EmailBox" class="label-email">
+                            <span class="content-email">Email</span>
+                        </label>
+                    </div>
+                </div>
+                <div id="messages">
+                    <textarea name="YourMessages" id="MessagesBox" placeholder="Please Enter your messages" required></textarea>
+                </div>
+                <button type="button" onclick="alert('Your message will be delivered to Demon Customs in no time!')">Submit</button>
+
+
+
+            </form>
+        </div>
+<div class="footer">
+                    <p>Copyright 2019 @ Customs</p>
+                </div>
+    </div>
+
+</body>
+
+</html>

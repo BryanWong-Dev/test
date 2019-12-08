@@ -1,0 +1,178 @@
+@charset"utf-8";
+@import url('https://fonts.googleapis.com/css?family=Anton');
+
+html,
+footer,
+nav,
+div,
+img,
+a,
+ul,
+p,
+p2,
+p3,
+li,
+h1,
+h2 {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+    color: #fff;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: sans-serif;
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+}
+
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* start of heading*/
+
+.header {
+    height: 15%;
+    background-image: linear-gradient(180deg, rgba(38, 38, 38, 1), rgba(63, 63, 63, 0.8), rgba(38, 38, 38, 0.0));
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+
+body {
+    width: 100%;
+    margin: 0 auto;
+    font-family: helvetica;
+    background: black;
+}
+
+
+.nav-list a {
+    text-decoration: none;
+    position: relative;
+}
+
+.nav-list a:not(.has-logo)::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    border-radius: 20px;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.5s cubic-bezier(1, 0.25, 0, 0.75) 0s;
+    transition: all 0.5s cubic-bezier(1, 0.25, 0, 0.75) 0s;
+}
+
+.nav-list a:not(.has-logo):hover:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+.active {
+    border-bottom: 3px solid #fff;
+    border-radius: 3%;
+}
+
+
+
+
+.nav-list {
+    height: 80px;
+}
+
+.nav-list img {
+    width: 100%;
+    vertical-align: middle;
+    padding: 0;
+    -webkit-filter: drop-shadow(0px 0px 8px #fff);
+
+}
+
+
+
+
+.nav-list {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-evenly;
+    align-items: center;
+    white-space: nowrap;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.nav-list > li {
+    position: relative;
+}
+
+.nav-list a {
+    text-transform: uppercase;
+    display: block;
+    padding: 1rem;
+    color: white;
+    width: 110px;
+    text-align: center;
+    animation: glow 2s ease-in-out infinite alternate;
+
+
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff;
+    }
+
+    to {
+        text-shadow: 0 0 20px #fff, 0 0 30px #68F7F6, 0 0 40px #8CFFE9;
+    }
+
+}
+
+
+.nav-list a.has-logo {
+    padding: 0rem;
+
+}
+
+
+.nav-list ul {
+    position: absolute;
+    z-index: 1010;
+    background-color: #fff;
+}
+
+.nav-list ul a {
+    font-weight: normal;
+    display: block;
+    padding: .5rem 1rem;
+    font-size: 20px;
+}
+
+/* end of heading*/
+
+
+/* start of footerrr  */
+
+
+/* end of footerrr  */
+
+/* start of scrollbar*/
+::-webkit-scrollbar {
+    display: none;
+}
+
+/* end of scrollbar*/

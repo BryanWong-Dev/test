@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Demon ~ Gallery</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="media/photo/logosite.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/styleGallery.css">
+    <script src="js/slide.js" defer></script>
+    <script src="js/bodykit.js" defer></script>
+
+
+
+
+</head>
+
+<body>
+    <div class="header" id="myHeader">
+        <nav>
+            <ul class="nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="bodykit.html">Body Kit</a></li>
+                <li><a href="index.html" class="has-logo"><img src="media/photo/final_logo.png" alt=""></a></li>
+                <li><a href="exhaust.html">Exhaust</a></li>
+                <li><a href="gallery.html" class="active">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="wrap">
+        <div id="arrow-left" class="arrow"></div>
+        <div id="slider">
+            <div class="slide slide1" style="background-image: url(media/photo/wp1930593.jpg);">
+                <div class="slide-content">
+
+                    <div class="inner-container">
+                        <div class="pic1 creative"><img src="media/photo/ave03-1-1.jpg" alt="" onclick="myFunction(this);"></div>
+                        
+                        <div class="pic2 creative"><img src="media/photo/ave10-1-1.jpg" alt="" onclick="myFunction(this);"></div>
+                        
+                        <div class="pic3 creative"><img src="media/photo/ave19-1-1.jpg" alt="" onclick="myFunction(this);"></div>
+                        
+                        <div class="pic4 creative">
+                        <img src="media/photo/ave20-1-1.jpg" alt="" onclick="myFunction(this);"></div>
+                        
+                        <div class="pic5 creative"><img src="media/photo/AvantadorLTD140.jpeg" alt="" onclick="myFunction(this);">
+                        
+                        </div><div class="pic6 creative"><img src="media/photo/AvantadorLTD30.jpeg" alt="" onclick="myFunction(this);"></div>
+                        
+                        <div class="container">
+                            <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+                            <img id="expandedImg" >
+                            <div id="imgtext"></div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="slideIndicator">
+                    <div class="rec1 recActive"></div>
+                    <div class="rec2 "></div>
+                    <div class="rec2 "></div>
+
+                </div>
+                
+            </div>
+            <div class="slide slide2"  style="background-image: url(media/photo/wp1930593.jpg);">
+                <div class="slide-content">
+                    <div class="inner-container">
+                        <div class="pic1 creative"><img src="media/photo/AvantadorLTD70.jpeg" alt="" onclick="myFunction(this);"></div>
+                        
+                        <div class="pic2 creative"><img src="media/photo//GTR03-1-1.jpg" alt="" onclick="myFunction(this);"></div>
+                        
+                        <div class="pic3 creative"><img src="media/photo/wp1930664.jpg" alt="" onclick="myFunction(this);"></div>
+                        
+                        <div class="pic4 creative">
+                        <img src="media/photo/wp1930662.jpg" alt="" onclick="myFunction(this);"></div>
+                        
+                        <div class="pic5 creative"><img src="media/photo/wp1930658.jpg" alt="" onclick="myFunction(this);">
+                        
+                        </div><div class="pic6 creative"><img src="media/photo/wp1930652.jpg" alt="" onclick="myFunction(this);"></div>
+                        
+                        <div class="container">
+                            <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+                            <img id="expandedImg" >
+                            <div id="imgtext"></div>
+                        </div>
+
+
+                    </div>
+
+                </div>
+                <div class="slideIndicator">
+                    <div class="rec1"></div>
+                    <div class="rec2 recActive"></div>
+                    <div class="rec3"></div>
+
+                </div>
+            </div>
+            <div class="slide slide3"  style="background-image: url(media/photo/wp1930593.jpg);">
+                <div class="slide-content">
+                     <div class="inner-container">
+                        <div class="pic1 creative"><img src="media/photo/wp1930632.jpg" alt="" onclick="myFunction(this);"></div>
+                        
+                        <div class="pic2 creative"><img src="media/photo/wp1930629.jpg" alt="" onclick="myFunction(this);"></div>
+                        
+                        <div class="pic3 creative"><img src="media/photo/wp1930628.jpg" alt="" onclick="myFunction(this);"></div>
+                        
+                        <div class="pic4 creative">
+                        <img src="media/photo/wp1930626.jpg" alt="" onclick="myFunction(this);"></div>
+                        
+                        <div class="pic5 creative"><img src="media/photo/wp1930624.jpg" alt="" onclick="myFunction(this);">
+                        
+                        </div><div class="pic6 creative"><img src="media/photo/wp1930623.jpg" alt="" onclick="myFunction(this);"></div>
+                        
+                         <div class="container">
+                            <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+                            <img id="expandedImg" >
+                            <div id="imgtext"></div>
+                        </div>
+
+
+                    </div>
+                </div>
+                <div class="slideIndicator">
+                    <div class="rec1"></div>
+                    <div class="rec2 "></div>
+                    <div class="rec3 recActive"></div>
+
+                </div>
+
+            </div>
+            <script>
+                function myFunction(imgs) {
+                    var expandImg = document.getElementById("expandedImg");
+                    var imgText = document.getElementById("imgtext");
+                    expandImg.src = imgs.src;
+                    imgText.innerHTML = imgs.alt;
+                    expandImg.parentElement.style.display = "block";
+                }
+
+            </script>
+
+        </div>
+        <div id="arrow-right" class="arrow"></div>
+<div class="footer">
+                    <p>Copyright 2019 @ Customs</p>
+                </div>
+    </div>
+
+
+</body>
+
+</html>
